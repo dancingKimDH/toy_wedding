@@ -47,6 +47,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:18.2.0"],\
+          ["react-icons", "virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:5.0.1"],\
           ["react-scripts", "virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:5.0.1"],\
           ["sass", "npm:1.70.0"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
@@ -15750,6 +15751,28 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["react-icons", [\
+      ["npm:5.0.1", {\
+        "packageLocation": "../../Users/82105/AppData/Local/Yarn/Berry/cache/react-icons-npm-5.0.1-5e01385cf2-10c0.zip/node_modules/react-icons/",\
+        "packageDependencies": [\
+          ["react-icons", "npm:5.0.1"]\
+        ],\
+        "linkType": "SOFT"\
+      }],\
+      ["virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:5.0.1", {\
+        "packageLocation": "./.yarn/__virtual__/react-icons-virtual-70917ee7e6/3/Users/82105/AppData/Local/Yarn/Berry/cache/react-icons-npm-5.0.1-5e01385cf2-10c0.zip/node_modules/react-icons/",\
+        "packageDependencies": [\
+          ["react-icons", "virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:5.0.1"],\
+          ["@types/react", "npm:18.2.53"],\
+          ["react", "npm:18.2.0"]\
+        ],\
+        "packagePeers": [\
+          "@types/react",\
+          "react"\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["react-is", [\
       ["npm:16.13.1", {\
         "packageLocation": "../../Users/82105/AppData/Local/Yarn/Berry/cache/react-is-npm-16.13.1-a9b9382b4f-10c0.zip/node_modules/react-is/",\
@@ -17627,6 +17650,7 @@ const RAW_RUNTIME_STATE =
           ["prettier", "npm:3.2.5"],\
           ["react", "npm:18.2.0"],\
           ["react-dom", "virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:18.2.0"],\
+          ["react-icons", "virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:5.0.1"],\
           ["react-scripts", "virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:5.0.1"],\
           ["sass", "npm:1.70.0"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
