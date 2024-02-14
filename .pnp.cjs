@@ -54,6 +54,7 @@ const RAW_RUNTIME_STATE =
           ["sass", "npm:1.70.0"],\
           ["sass-loader", "virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:14.1.0"],\
           ["style-loader", "virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:3.3.4"],\
+          ["swiper", "npm:9.4.1"],\
           ["ts-jest", "virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:29.1.2"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
           ["web-vitals", "npm:2.1.4"],\
@@ -17007,6 +17008,15 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["ssr-window", [\
+      ["npm:4.0.2", {\
+        "packageLocation": "../../Users/82105/AppData/Local/Yarn/Berry/cache/ssr-window-npm-4.0.2-01f9c0151e-10c0.zip/node_modules/ssr-window/",\
+        "packageDependencies": [\
+          ["ssr-window", "npm:4.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["ssri", [\
       ["npm:10.0.5", {\
         "packageLocation": "../../Users/82105/AppData/Local/Yarn/Berry/cache/ssri-npm-10.0.5-1a7557d04d-10c0.zip/node_modules/ssri/",\
@@ -17449,6 +17459,16 @@ const RAW_RUNTIME_STATE =
         "linkType": "HARD"\
       }]\
     ]],\
+    ["swiper", [\
+      ["npm:9.4.1", {\
+        "packageLocation": "../../Users/82105/AppData/Local/Yarn/Berry/cache/swiper-npm-9.4.1-38d46d35a3-10c0.zip/node_modules/swiper/",\
+        "packageDependencies": [\
+          ["swiper", "npm:9.4.1"],\
+          ["ssr-window", "npm:4.0.2"]\
+        ],\
+        "linkType": "HARD"\
+      }]\
+    ]],\
     ["symbol-tree", [\
       ["npm:3.2.4", {\
         "packageLocation": "../../Users/82105/AppData/Local/Yarn/Berry/cache/symbol-tree-npm-3.2.4-fe70cdb75b-10c0.zip/node_modules/symbol-tree/",\
@@ -17767,6 +17787,7 @@ const RAW_RUNTIME_STATE =
           ["sass", "npm:1.70.0"],\
           ["sass-loader", "virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:14.1.0"],\
           ["style-loader", "virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:3.3.4"],\
+          ["swiper", "npm:9.4.1"],\
           ["ts-jest", "virtual:74e998e172135c7c3090cdd256e89bd16eb43a11be900bd2738f5dcda70d42f9250f550197b5100bcf068e56a1863dc9fdeb5e100aac4a82fe4100a0c0f7a1aa#npm:29.1.2"],\
           ["typescript", "patch:typescript@npm%3A4.9.5#optional!builtin<compat/typescript>::version=4.9.5&hash=289587"],\
           ["web-vitals", "npm:2.1.4"],\
