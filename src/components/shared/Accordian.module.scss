@@ -1,0 +1,37 @@
+.wrap-accordian {
+
+    margin-bottom: 6px;
+
+    .wrap-content{
+        display: none;
+    }
+
+    .wrap-header {
+
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: var(--beige);
+        padding: 10px;
+
+        cursor: pointer;
+
+        .icon-arrow-down {
+            width: 20px;
+            height: 20px;
+
+
+        }
+    }
+}
+
+.wrap-accordian.open {
+    .wrap-header {
+        .ico-arrow-down{
+            transform: rotate(-180deg);
+        }
+    }
+    .wrap-content {
+        display: block;
+    }
+}
