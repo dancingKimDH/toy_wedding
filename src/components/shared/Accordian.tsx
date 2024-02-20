@@ -1,7 +1,6 @@
 import classNames from 'classnames/bind'
 import styles from './Accordian.module.scss'
 import { PropsWithChildren, useState } from 'react'
-import { Person } from '@/models/wedding'
 
 const cx = classNames.bind(styles)
 
