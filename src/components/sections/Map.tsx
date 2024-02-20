@@ -17,7 +17,16 @@ function WayToCome({
   label: React.ReactNode
   list: string[]
 }) {
-  return <div>hello!</div>
+  return (
+    <div className={cx('wrap-wayToCome')}>
+      <div className={cx('txt-label')}>{label}</div>
+      <ul>
+        {list.map((transportation) => (
+          <li>{transportation}</li>
+        ))}
+      </ul>
+    </div>
+  )
 }
 
 const cx = classNames.bind(styles)
@@ -70,6 +79,10 @@ export default function Map({ location }: { location: Location }) {
         >
           길 찾기
         </a>
+      </div>
+      <div>
+        <WayToCome label="버스" list={location.waytocome.bus} />
+        <WayToCome label="지하철" list={location.waytocome.metro} />
       </div>
     </Section>
   )
