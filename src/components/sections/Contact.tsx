@@ -3,6 +3,7 @@ import styles from './Contact.module.scss'
 import Section from '../shared/Section'
 import Accordian from '../shared/Accordian'
 import { Person, Wedding } from '@/models/wedding'
+import CopyToClipboard from 'react-copy-to-clipboard'
 
 const cx = classNames.bind(styles)
 
@@ -55,17 +56,41 @@ export default function Contact({
 
 function ContactInfo({ name, account, phoneNumber }: Person) {
   return (
-    <div>
-      <div>
+    <div className={cx('wrap-contact')}>
+      <div className={cx('wrap-contact-info')}>
         <span>{`${account.bankName} | ${account.accountNumber}`}</span>
         <span>{name}</span>
       </div>
-      <ul>
+      <ul className={cx('wrap-buttons')}>
         <li>
-          <a href={`tel: ${phoneNumber}`}>전화</a>
+          <a className={cx('button')} href={`tel: ${phoneNumber}`}>
+            전화
+          </a>
         </li>
-        <li>복사</li>
-        {account.kakaoLink != null ? <li>송금</li> : null}
+        <li>
+          <CopyToClipboard
+            text={`${account.bankName} ${account.accountNumber}`}
+            onCopy={() => {
+              alert('복사가 완료되었습니다')
+            }}
+          >
+            <button type="button" className={cx('button')}>
+              복사
+            </button>
+          </CopyToClipboard>
+        </li>
+        {account.kakaoLink != null ? (
+          <li>
+            <a
+              className={cx('button')}
+              href={account.kakaoLink}
+              target="_blank"
+              rel="noreferrer"
+            >
+              송금
+            </a>
+          </li>
+        ) : null}
       </ul>
     </div>
   )
