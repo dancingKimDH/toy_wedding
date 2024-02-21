@@ -9,6 +9,8 @@ import { Swiper, SwiperSlide } from 'swiper/react'
 
 import { MdCloseFullscreen } from 'react-icons/md'
 
+import Dimmed from '../shared/Dimmed'
+
 const cx = classNames.bind(styles)
 
 function CloseButton({
@@ -37,7 +39,7 @@ export default function ImageViewer({
   }
 
   return (
-    <div className={cx('dimmed')}>
+    <Dimmed>
       <CloseButton className={cx('icon-close')} onClose={onClose} />
       <Swiper
         spaceBetween={20}
@@ -53,6 +55,6 @@ export default function ImageViewer({
           )
         })}
       </Swiper>
-    </div>
+    </Dimmed>
   )
 }
