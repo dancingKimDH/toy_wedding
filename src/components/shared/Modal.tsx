@@ -22,6 +22,7 @@ export default function Modal({
   rightButtonLabel = '확인',
   onRightButtonClick,
   onLeftButtonClick,
+  body,
 }: ModalProps) {
   if (open === false) {
     return null
@@ -35,6 +36,7 @@ export default function Modal({
             {title == null ? null : (
               <div className={cx('txt-title')}>{title}</div>
             )}
+            {body}
           </div>
           <div className={cx('wrap-buttons')}>
             <button type="button" onClick={onLeftButtonClick}>
