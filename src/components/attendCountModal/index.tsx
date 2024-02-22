@@ -11,6 +11,7 @@ export default function AttendCountModal({ wedding }: { wedding: Wedding }) {
   useEffect(() => {
     if (haveSeenModal === 'true') {
       return
+      // Returns early if haveSeenModal is 'true'
     }
 
     open({
@@ -37,9 +38,14 @@ export default function AttendCountModal({ wedding }: { wedding: Wedding }) {
           method: 'PUT',
           body: JSON.stringify({
             ...wedding,
+
+            // In JS, the result is a string concatenation when a string is concatenated with a number using the + operator
+            // By using Number(), the value is explicitly converted to a numeric type
+
             attendCount: wedding.attendCount + Number($input.current.value),
           }),
           headers: {
+            // Infroms the Server that the payload is formatted as JSON and should be parsed accordingly
             'Content-Type': 'application/json',
           },
         })

@@ -87,7 +87,6 @@ function App() {
       <Contact groom={groom} bride={bride} />
       <Share groomName={groom.name} brideName={bride.name} date={date} />
       <AttendCountModal wedding={wedding} />
-      {JSON.stringify(wedding)}
     </div>
   )
 }

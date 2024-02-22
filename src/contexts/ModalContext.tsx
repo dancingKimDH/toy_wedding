@@ -39,6 +39,7 @@ export function ModalContext({ children }: { children: React.ReactNode }) {
   }
 
   return (
+    // createPortal is used to render a React component's tree into a different DOM element outside the parent hierarchy
     <Context.Provider value={values}>
       {children}
       {$portal_root != null
