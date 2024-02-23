@@ -18,6 +18,29 @@ import Contact from './components/sections/Contact'
 import Share from './components/sections/Share'
 import AttendCountModal from './components/attendCountModal'
 
+import { FirebaseApp, getApp, initializeApp } from 'firebase/app'
+
+export let app: FirebaseApp
+
+const firebaseConfig = {
+  apiKey: process.env.REACT_APP_API_KEY,
+  authDomain: process.env.REACT_APP_AUTHDOMAIN,
+  projectId: process.env.REACT_APP_PROJECTID,
+  storageBucket: process.env.REACT_APP_STORAGEBUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGINGSENDERID,
+  appId: process.env.REACT_APP_APP_ID,
+}
+
+try {
+  app = getApp('app')
+} catch (error) {
+  app = initializeApp(firebaseConfig, 'app')
+}
+
+const firebase = initializeApp(firebaseConfig)
+
+export { firebase }
+
 const cx = classNames.bind(styles)
 
 function App() {
