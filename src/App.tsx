@@ -37,22 +37,18 @@ try {
   app = initializeApp(firebaseConfig, 'app')
 }
 
-const firebase = initializeApp(firebaseConfig)
-
-export { firebase }
+export const firebase = initializeApp(firebaseConfig)
 
 const cx = classNames.bind(styles)
 
-function App() {
+export default function App() {
   const [wedding, setWedding] = useState<Wedding | null>(null)
-
   const [loading, setLoading] = useState(false)
-
   const [error, setError] = useState(false)
 
   useEffect(() => {
     setLoading(true)
-    fetch('http://localhost:8888/wedding')
+    fetch('./db.json')
       .then((res) => {
         if (res.ok === false) {
           throw new Error('정보를 불러오지 못했습니다')
@@ -60,10 +56,10 @@ function App() {
         return res.json()
       })
       .then((data) => {
-        setWedding(data)
+        setWedding(data.wedding)
       })
       .catch((e) => {
-        console.log('error')
+        console.log('data failed')
         setError(true)
       })
       .finally(() => {
@@ -113,5 +109,3 @@ function App() {
     </div>
   )
 }
-
-export default App

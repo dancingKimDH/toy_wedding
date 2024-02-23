@@ -1,8 +1,6 @@
 import styles from './FullScreenMessage.module.scss'
 import classNames from 'classnames/bind'
 
-import { BiSolidError } from 'react-icons/bi'
-
 const cx = classNames.bind(styles)
 
 interface FullScreenMessageProps {

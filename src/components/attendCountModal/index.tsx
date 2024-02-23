@@ -34,7 +34,7 @@ export default function AttendCountModal({ wedding }: { wedding: Wedding }) {
         if ($input.current == null) {
           return null
         }
-        await fetch('http://localhost:8888/wedding', {
+        await fetch('/db.json', {
           method: 'PUT',
           body: JSON.stringify({
             ...wedding,
