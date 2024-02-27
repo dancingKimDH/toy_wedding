@@ -42,15 +42,7 @@ export const firebase = initializeApp(firebaseConfig)
 const cx = classNames.bind(styles)
 
 export default function App() {
-  const { wedding, isLoading, error } = useWedding()
-
-  if (isLoading) {
-    return <FullScreenMessage type="loading" />
-  }
-
-  if (error) {
-    return <FullScreenMessage type="error" />
-  }
+  const { wedding } = useWedding()
 
   if (wedding == null) {
     return null
