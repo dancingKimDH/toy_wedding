@@ -48,9 +48,14 @@ export default function ImageViewer({
         initialSlide={selectedIdx}
       >
         {images.map((src, index) => {
+          const src_sliced = src.slice(0, -4)
+
           return (
             <SwiperSlide key={index}>
-              <img src={src} alt="이미지" />
+              <picture>
+                <source srcSet={`${src_sliced}.webp`} type="image/webp" />
+                <img src={`${src_sliced}.jpg`} alt="이미지" />
+              </picture>
             </SwiperSlide>
           )
         })}

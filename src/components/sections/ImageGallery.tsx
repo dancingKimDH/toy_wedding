@@ -23,15 +23,22 @@ export default function ImageGallery({ images }: { images: string[] }) {
     <>
       <Section title="사진첩">
         <ul className={cx('wrap-images')}>
-          {images.map((src, index) => (
-            <li
-              key={index}
-              className={cx('wrap-image')}
-              onClick={() => handleSelectedImage(index)}
-            >
-              <img src={src} alt="이미지" />
-            </li>
-          ))}
+          {images.map((src, index) => {
+            const src_sliced = src.slice(0, -4)
+
+            return (
+              <li
+                key={index}
+                className={cx('wrap-image')}
+                onClick={() => handleSelectedImage(index)}
+              >
+                <picture>
+                  <source srcSet={`${src_sliced}.webp`} type="image/webp" />
+                  <img src={`${src_sliced}.jpg`} alt="이미지" />
+                </picture>
+              </li>
+            )
+          })}
         </ul>
       </Section>
       <ImageViewer

@@ -8,7 +8,6 @@ import FullScreenMessage from './components/shared/FullScreenMessage'
 import Heading from './components/sections/Heading'
 import Video from './components/sections/Video'
 
-import { Wedding } from './models/wedding'
 import ImageGallery from './components/sections/ImageGallery'
 import Intro from './components/sections/Intro'
 import Invitation from './components/sections/Invitation'
@@ -19,6 +18,7 @@ import Share from './components/sections/Share'
 import AttendCountModal from './components/attendCountModal'
 
 import { FirebaseApp, getApp, initializeApp } from 'firebase/app'
+import useWedding from './hooks/useWedding'
 
 export let app: FirebaseApp
 
@@ -42,32 +42,9 @@ export const firebase = initializeApp(firebaseConfig)
 const cx = classNames.bind(styles)
 
 export default function App() {
-  const [wedding, setWedding] = useState<Wedding | null>(null)
-  const [loading, setLoading] = useState(false)
-  const [error, setError] = useState(false)
+  const { wedding, isLoading, error } = useWedding()
 
-  useEffect(() => {
-    setLoading(true)
-    fetch('./db.json')
-      .then((res) => {
-        if (res.ok === false) {
-          throw new Error('정보를 불러오지 못했습니다')
-        }
-        return res.json()
-      })
-      .then((data) => {
-        setWedding(data.wedding)
-      })
-      .catch((e) => {
-        console.log('data failed')
-        setError(true)
-      })
-      .finally(() => {
-        setLoading(false)
-      })
-  }, [])
-
-  if (loading) {
+  if (isLoading) {
     return <FullScreenMessage type="loading" />
   }
 
