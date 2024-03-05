@@ -5,10 +5,7 @@
 
 
 - [바로가기](https://toy-wedding.web.app/)
-  ```
-  - 테스트ID: test123@test.com
-  - 테스트PW: 12345678
-  ```
+
 
 ## Tech Stack
 <div> <img src="https://img.shields.io/badge/react-61DAFB?style=for-the-badge&logo=react&logoColor=white">
