@@ -4,7 +4,7 @@
 ## Key Features
 
 
-- [바로가기](https://toy-wedding.web.app/)
+- [바로가기](https://toy-wedding.web.app)
 
 
 ## Tech Stack
