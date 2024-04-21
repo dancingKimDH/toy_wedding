@@ -1,4 +1,5 @@
 export interface Wedding {
+  wedding: any
   id: number
   date: string
   location: Location

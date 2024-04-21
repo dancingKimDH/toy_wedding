@@ -48,6 +48,8 @@ export default function App() {
     return null
   }
 
+  console.log(wedding.wedding)
+
   const {
     date,
     galleryImages,
@@ -55,7 +57,7 @@ export default function App() {
     bride,
     location,
     message: { intro, invitation },
-  } = wedding
+  } = wedding.wedding
 
   return (
     <div className={cx('container')}>
