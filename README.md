@@ -14,6 +14,9 @@
 <img src="https://img.shields.io/badge/html5-E34F26?style=for-the-badge&logo=html5&logoColor=white">
 <img src="https://img.shields.io/badge/sass-CC6699?style=for-the-badge&logo=sass&logoColor=white"></div>
 
+## Error Log - 수정 필요
+- 카카오맵 배포 시 오류
+
 ## Review
 
 
